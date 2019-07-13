@@ -1,15 +1,28 @@
     // учитывая, что следующий код будет отображать
     // «Хорошо», если ученик учится на более чем 7 баллов
     // и "Плохо", если от 7 и хуже
-    mark = prompt( "Enter student's mark? " )
-    if( mark > 7 ) {
-        alert( "GOOD!" )
-    } else {
-        alert( "BAD!" )
-    }
+    //mark = prompt( "Enter student's mark? " )
+    //if( mark > 7 ) {
+    //    alert( "GOOD!" )
+    //} else {
+    //    alert( "BAD!" )
+    //}
 
     // сделайте так чтобы вы смогли ввести 3 оценки с клавиатуры:
     // semester1, semester2 и exam
     // после чего скрипт вычисляет среднюю оценку по формуле
     // g = 20% каждого семестра + 60% экзаменационной оценки
     // а затем с помощью if / else определяет, хорошо он учился или нет
+
+    //ввод данных
+marc_1 = prompt( "first mark?") * 1;
+marc_2 = prompt( "second mark?") * 1;
+marc_3 = prompt( "third mark?") * 1;
+//решение
+g = 20 * (marc_1 + marc_2)/100 + 60 * marc_3 /100;
+//output
+if( g > 7 ) {
+        alert( "GOOD!" )
+    } else {
+        alert( "BAD!" )
+    };
